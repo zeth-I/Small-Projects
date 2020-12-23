@@ -1,0 +1,2 @@
+Padding = Interno, ou seja dentro do container
+Margin = Externo, ou seja fora do container
