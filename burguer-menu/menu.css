@@ -1,0 +1,105 @@
+/* Forma do Menu */
+
+.menu {
+    background: rgb(41, 41, 46);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+
+    cursor: pointer;
+
+    transition: box-shadow 1s ease-in-out;
+    box-shadow: 0 0 0 0px rgb(41, 41, 46), 0 0 0 0px rgb(41, 41, 46);
+}
+
+.menu:hover {
+    box-shadow: 0 0 0 8px rgb(56, 48, 48), 0 0 0 8px rgb(41, 41, 46);
+}
+
+.burguer {
+    display: flex;
+    position: relative;
+    width: 30px;
+    background: #000;
+    height: 2px;
+
+    top: 28px;
+    left: 15px;
+
+    transition: .5s ease-in-out;
+}
+
+.burguer::before,
+.burguer::after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    transition: .5s ease-in-out;
+}
+
+.burguer::before {
+    top: -10px;
+}
+
+.burguer::after{
+    bottom: -10px;
+}
+
+/* Input, transição de hamburguer para X */
+
+input{
+    display: none;
+}
+
+input:checked ~ label ul{
+    opacity: 1;
+}
+
+input:checked ~ label .menu {
+    box-shadow: 0 0 0 110vw rgb(41, 41, 46), 0 0 0 110vw rgb(41, 41, 46);
+}
+
+input:checked ~ label .burguer {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .burguer::before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked ~ label .burguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+/* Menu interno */
+
+a {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    font-size: 2.5vw;
+    color: #fffafa;
+    text-decoration: none;
+   }
+
+ul {
+    list-style: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+}
