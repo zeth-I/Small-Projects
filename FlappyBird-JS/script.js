@@ -38,4 +38,3 @@
        || birdY > canvasSize) && 
       ((birdDY = 0), (birdY = 200), (pipeX = canvasSize), (score = 0)); // Como resultado, passarinho morreu :c
     }, interval)
-  
