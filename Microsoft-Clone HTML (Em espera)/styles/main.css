@@ -1,0 +1,140 @@
+/* Global */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/background.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+a:hover{
+    text-decoration: underline rgba(0,0,0,.7);   
+}
+.question{
+    height: 20px;
+}
+
+/* Login */
+.white-box{
+    /* Centralizando */
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 500px;
+    height: 600;
+    width: calc(100% - 40px);
+    min-width: 450px;
+    min-height: 390px;
+    border-radius: .3rem;
+    margin-bottom: 28px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    padding: 44px;
+    overflow: hidden;
+}
+
+.logo{
+    width: 150px;
+    padding-left: 5px;
+}
+/* Text-box */
+
+.text-box.fail{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h2{
+    padding-top: 10px;
+}
+
+.text-box{
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input {
+    width: 100%;
+    font-size: medium;
+    border-style: solid;
+    padding: 6px 10px;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.6);
+    height: 36px;
+    outline: none;
+    background-color: transparent;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding-left: 0;
+}
+
+.text-box-end{
+
+    float: right;
+}
+
+/* Button */
+.next{
+    display: block;
+    width: 100px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    margin: auto;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+.next:hover{
+    background: #024d86;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+    clear: both;
+    background: #fff;
+}
+
+.foota{
+    color: black;
+    opacity: 1;
+    margin: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    float: right;
+    justify-content: center;
+}
+
+.foota.right{
+    margin-right: 50px;
+}
